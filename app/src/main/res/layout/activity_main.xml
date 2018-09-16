@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:drawableTop="@drawable/home_black"
+            android:text="首页"
+            style="@style/RadioButtonStyle"/>
+        <RadioButton
+            android:drawableTop="@drawable/contact_black"
+            android:text="联系人"
+            style="@style/RadioButtonStyle"/>
+        <RadioButton
+            android:drawableTop="@drawable/system_black"
+            android:text="系统设置"
+            style="@style/RadioButtonStyle"/>
+        <RadioButton
+            android:drawableTop="@drawable/friend_black"
+            android:text="朋友圈"
+            style="@style/RadioButtonStyle"/>
+
+    </RadioGroup>
+
+</LinearLayout>
